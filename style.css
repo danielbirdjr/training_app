@@ -1,0 +1,226 @@
+* {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+
+}
+
+.iphone_container {
+    background-color: #D9D9D9;
+    width: 430px;
+    height: 932px;
+    border: black 1px solid;
+    overflow: hidden;
+    position: relative;
+    /* added this */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_container {
+    height: 100px;
+    border-radius: 60px 60px 24px 24px;
+    background-color: white;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 1;
+    top: 0;
+    /* added this in */
+    width: 100%;
+    position: absolute;
+}
+
+.top_container i {
+    font-size: 30px;
+    height: 30px;
+}
+
+.top_container1 {
+    width: 85px;
+}
+
+.top_container2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.top_container3 {
+    width: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iphone_container {
+    border-radius: 60px;
+}
+
+/* added this in */
+.exercise_container {
+    margin-top: 100px;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow-y: auto;
+}
+
+.exercise {
+    background-color: white;
+    border-radius: 24px;
+    margin-top: 8px;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 8px;
+}
+
+.exercise_name_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.exercise_name {
+    font-size: 26px;
+}
+
+.exercise_name_options_container {
+    margin-right: 5px;
+    margin-left: 10px;
+    width: 80px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exercise_name_options_container i, 
+.feather-info
+ {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.exercise_name_options_container .icon-button i {
+    font-size: 20px; 
+}
+
+.set_container {
+    margin-bottom: 5px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.prescribed {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input {
+    color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    font-size: 22px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.weight_used {
+    width: 140px;
+}
+
+.reps_done {
+    width: 120px;
+}
+
+.actual_RPE {
+    width: 70px;
+}
+
+.exercise_options_container {
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.75);
+    align-items: center;
+}
+
+.exercise_options_container i {
+    font-size: 22px;
+}
+
+.notes {
+    width: 140px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.notes svg {
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.video_file {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.record {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reset button styles */
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.05s ease, box-shadow 0.05s ease; /* Smooth transition */
+}
+
+.icon-button:active {
+    transform: translateY(2px); /* Move the button down */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* Adjust shadow to make it look pressed */
+}
+
+/* hidding scrollbar */
+.exercise_container {
+    margin-top: 100px;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.exercise_container::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
