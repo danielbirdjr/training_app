@@ -195,7 +195,7 @@ input {
 
 /* Reset button styles */
 .icon-button {
-    background: none;
+    background: lightblue;
     border: none;
     padding: 0;
     margin: 0;
